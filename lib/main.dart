@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:louis_moody_ui/pages/onBoarding/onBoarding_page.dart';
-import 'package:louis_moody_ui/pages/sign_up/signUp_page.dart';
+import 'package:louis_moody_ui/pages/sign_up_email/signUp_email.dart';
+import 'package:louis_moody_ui/pages/sign_up_pass/signUp_pass.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: SignUpPage(),
+      home: SignUpPassPage(),
     );
   }
 }

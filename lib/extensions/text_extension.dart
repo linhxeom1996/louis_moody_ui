@@ -1,3 +1,7 @@
+class TxtCommon {
+  static String continu = "Continue";
+}
+
 class TextOnBoard {
   // ignore: non_constant_identifier_names
   static String stakin = "Flip 'n' Stack 'em";
@@ -9,10 +13,16 @@ class TextOnBoard {
   static String login = " Login";
 }
 
-class TextSignUp {
+class TextSignUpEmail {
   // ignore: non_constant_identifier_names
   static String whats_your_email = "What's your email\naddress";
   // ignore: non_constant_identifier_names
   static String enter_email = "Enter your email";
-  static String continu = "Continue";
+}
+
+class TxtSignUpPass {
+  // ignore: non_constant_identifier_names
+  static String choo_your_pass = "Choose your\npassword";
+  // ignore: non_constant_identifier_names
+  static String at_least = "At least 8 charaters";
 }
