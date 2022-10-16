@@ -9,4 +9,10 @@ class TextOnBoard {
   static String login = " Login";
 }
 
-class TextLogin {}
+class TextSignUp {
+  // ignore: non_constant_identifier_names
+  static String whats_your_email = "What's your email\naddress";
+  // ignore: non_constant_identifier_names
+  static String enter_email = "Enter your email";
+  static String continu = "Continue";
+}

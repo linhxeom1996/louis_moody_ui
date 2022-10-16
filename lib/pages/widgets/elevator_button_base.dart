@@ -3,10 +3,9 @@ import 'package:louis_moody_ui/extensions/color_extension.dart';
 
 class ElevatorButtonBase extends StatelessWidget {
   final String text;
-  final Color colorText;
-  final double? fontSize;
+  final TextStyle textStyle;
   const ElevatorButtonBase(
-      {Key? key, required this.text, required this.colorText, this.fontSize})
+      {Key? key, required this.text, required this.textStyle})
       : super(key: key);
 
   @override
@@ -18,10 +17,7 @@ class ElevatorButtonBase extends StatelessWidget {
       ),
       child: Text(
         text,
-        style: TextStyle(
-          color: colorText,
-          fontSize: fontSize,
-        ),
+        style: textStyle,
       ),
     );
   }

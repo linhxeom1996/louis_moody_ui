@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:louis_moody_ui/extensions/color_extension.dart';
+import 'package:louis_moody_ui/extensions/fontSize_extension.dart';
 import 'package:louis_moody_ui/extensions/styleText_extension.dart';
 import 'package:louis_moody_ui/extensions/text_extension.dart';
 import 'package:louis_moody_ui/pages/widgets/elevator_button_base.dart';
@@ -55,8 +56,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                       height: 50,
                       child: ElevatorButtonBase(
                         text: TextOnBoard.txtButton,
-                        colorText: ColorBase.txtBlackColor,
-                        fontSize: 16,
+                        textStyle: StyleTxTBase().textButtonBlack,
                       ),
                     ),
                     GestureDetector(

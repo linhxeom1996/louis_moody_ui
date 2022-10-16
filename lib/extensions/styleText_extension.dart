@@ -21,4 +21,11 @@ class StyleTxTBase {
     fontFamily: "Avenir_Next",
     fontWeight: FontWeight.normal,
   );
+
+  final TextStyle textButtonBlack = TextStyle(
+    color: Color(0xff1E272E),
+    fontFamily: "Avenir_Next",
+    fontWeight: FontWeight.normal,
+    fontSize: 16,
+  );
 }

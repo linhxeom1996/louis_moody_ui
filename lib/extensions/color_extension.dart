@@ -8,6 +8,8 @@ class ColorBase {
   static Color txtPinkColor = Color(0xffFF0074);
 
   static Color boxGreyColor = Colors.grey[200]!;
+
+  static Color underLineColor = Colors.grey[350]!;
 }
 
 class ColorOnBoardBase {}
