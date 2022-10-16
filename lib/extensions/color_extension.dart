@@ -11,5 +11,3 @@ class ColorBase {
 
   static Color underLineColor = Colors.grey[350]!;
 }
-
-class ColorOnBoardBase {}

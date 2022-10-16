@@ -26,3 +26,11 @@ class TxtSignUpPass {
   // ignore: non_constant_identifier_names
   static String at_least = "At least 8 charaters";
 }
+
+class TxtFaceID {
+  // ignore: non_constant_identifier_names
+  static String would_you_like = "Would you like to\nlog in with Face ID?";
+  // ignore: non_constant_identifier_names
+  static String user_faceId = "Use Face ID";
+  static String nope = "No thanks";
+}
