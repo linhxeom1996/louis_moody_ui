@@ -65,6 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                 height: 160,
                 color: ColorBase.boxGreyColor,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     SizedBox(
                       width: double.infinity,
@@ -77,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
                         textStyle: StyleTxTBase().textButtonBlack,
                       ),
                     ),
-                    SizedBox(height: 7),
+                    SizedBox(height: 5),
                     TextButton(
                         onPressed: () {
                           log("tab forgot pass");

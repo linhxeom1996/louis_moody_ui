@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:louis_moody_ui/pages/home/home_page.dart';
 import 'package:louis_moody_ui/pages/login/login_page.dart';
 import 'package:louis_moody_ui/pages/onBoarding/onBoarding.dart';
 import 'package:louis_moody_ui/pages/sign_up_pass/signUp_pass.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       supportedLocales: context.supportedLocales,
       locale: context.locale,
       title: 'Flutter Demo',
-      home: LoginPage(),
+      home: HomePage(),
     );
   }
 }
