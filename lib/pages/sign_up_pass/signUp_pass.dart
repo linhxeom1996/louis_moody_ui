@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:louis_moody_ui/extensions/color_extension.dart';
 import 'package:louis_moody_ui/extensions/styleText_extension.dart';
-import 'package:louis_moody_ui/extensions/text_extension.dart';
 import 'package:louis_moody_ui/pages/widgets/appBar_base.dart';
 import 'package:louis_moody_ui/pages/widgets/elevator_button_base.dart';
 import 'package:louis_moody_ui/pages/widgets/text_form_field_base.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class SignUpPassPage extends StatefulWidget {
   const SignUpPassPage({Key? key}) : super(key: key);
@@ -41,13 +41,13 @@ class _SignUpPassPageState extends State<SignUpPassPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    TxtSignUpPass.choo_your_pass,
+                    'choo_your_pass'.tr(),
                     style: StyleTxTBase().texttitle,
                   ),
                   SizedBox(height: 10),
                   TextFormFieldBase(
                     textController: _emailController,
-                    hintText: TxtSignUpPass.at_least,
+                    hintText: 'at_least'.tr(),
                     hintStyle: StyleTxTBase().textBlack1,
                   )
                 ],
@@ -62,7 +62,8 @@ class _SignUpPassPageState extends State<SignUpPassPage> {
                 color: ColorBase.boxGreyColor,
                 child: SizedBox(
                   child: ElevatorButtonBase(
-                    text: TxtCommon.continu,
+                    onPress: () {},
+                    text: 'continu'.tr(),
                     textStyle: StyleTxTBase().textButtonBlack,
                   ),
                 ),

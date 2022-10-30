@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:louis_moody_ui/extensions/color_extension.dart';
 import 'package:louis_moody_ui/extensions/styleText_extension.dart';
-import 'package:louis_moody_ui/extensions/text_extension.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:louis_moody_ui/pages/widgets/appBar_base.dart';
 import 'package:louis_moody_ui/pages/widgets/elevator_button_base.dart';
 import 'package:louis_moody_ui/pages/widgets/text_form_field_base.dart';
@@ -41,13 +41,13 @@ class _SignUpEmailPageState extends State<SignUpEmailPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    TextSignUpEmail.whats_your_email,
+                    'whats_your_email'.tr(),
                     style: StyleTxTBase().texttitle,
                   ),
                   SizedBox(height: 10),
                   TextFormFieldBase(
                     textController: _emailController,
-                    hintText: TextSignUpEmail.enter_email,
+                    hintText: 'enter_email'.tr(),
                     hintStyle: StyleTxTBase().textBlack1,
                   )
                 ],
@@ -62,7 +62,8 @@ class _SignUpEmailPageState extends State<SignUpEmailPage> {
                 color: ColorBase.boxGreyColor,
                 child: SizedBox(
                   child: ElevatorButtonBase(
-                    text: TxtCommon.continu,
+                    onPress: () {},
+                    text: 'continu'.tr(),
                     textStyle: StyleTxTBase().textButtonBlack,
                   ),
                 ),

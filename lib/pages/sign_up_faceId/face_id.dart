@@ -3,10 +3,9 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:louis_moody_ui/extensions/color_extension.dart';
 import 'package:louis_moody_ui/extensions/styleText_extension.dart';
-import 'package:louis_moody_ui/extensions/text_extension.dart';
 import 'package:louis_moody_ui/pages/widgets/appBar_base.dart';
 import 'package:louis_moody_ui/pages/widgets/elevator_button_base.dart';
-import 'package:louis_moody_ui/pages/widgets/text_form_field_base.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class SignUpFaceIDPage extends StatefulWidget {
   const SignUpFaceIDPage({Key? key}) : super(key: key);
@@ -47,7 +46,7 @@ class _SignUpFaceIDPageState extends State<SignUpFaceIDPage> {
               padding: const EdgeInsets.fromLTRB(20, 100, 20, 0),
               child: Container(
                 child: Text(
-                  TxtFaceID.would_you_like,
+                  'would_you_like'.tr(),
                   style: StyleTxTBase().texttitle,
                 ),
               ),
@@ -65,7 +64,10 @@ class _SignUpFaceIDPageState extends State<SignUpFaceIDPage> {
                       height: 50,
                       width: double.infinity,
                       child: ElevatorButtonBase(
-                        text: TxtFaceID.user_faceId,
+                        onPress: () {
+                          log("user faceId");
+                        },
+                        text: 'user_faceId'.tr(),
                         textStyle: StyleTxTBase().textButtonBlack,
                       ),
                     ),
@@ -75,7 +77,7 @@ class _SignUpFaceIDPageState extends State<SignUpFaceIDPage> {
                         log("text press");
                       },
                       child: Text(
-                        TxtFaceID.nope,
+                        'nope_tks'.tr(),
                         style: StyleTxTBase().textPink,
                       ),
                     )

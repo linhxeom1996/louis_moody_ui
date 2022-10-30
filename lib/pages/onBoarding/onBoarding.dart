@@ -2,8 +2,8 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:louis_moody_ui/extensions/color_extension.dart';
 import 'package:louis_moody_ui/extensions/styleText_extension.dart';
-import 'package:louis_moody_ui/extensions/text_extension.dart';
 import 'package:louis_moody_ui/pages/widgets/elevator_button_base.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class OnBoardingPage extends StatefulWidget {
   OnBoardingPage({Key? key}) : super(key: key);
@@ -35,7 +35,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 children: [
                   SizedBox(height: 100),
                   Text(
-                    TextOnBoard.stakin,
+                    'stakin'.tr(),
                     style: StyleTxTBase().texttitle,
                   ),
                 ],
@@ -54,7 +54,8 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                       width: double.infinity,
                       height: 50,
                       child: ElevatorButtonBase(
-                        text: TextOnBoard.txtButton,
+                        onPress: () {},
+                        text: 'login'.tr(),
                         textStyle: StyleTxTBase().textButtonBlack,
                       ),
                     ),
@@ -69,11 +70,11 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                         color: Colors.transparent,
                         child: RichText(
                           text: TextSpan(
-                            text: TextOnBoard.already_have_an_acco,
+                            text: 'already_have_an_acco'.tr(),
                             style: StyleTxTBase().textBlack1,
                             children: [
                               TextSpan(
-                                text: TextOnBoard.login,
+                                text: 'login'.tr(),
                                 style: StyleTxTBase().textPink,
                               )
                             ],

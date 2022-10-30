@@ -1,0 +1,18 @@
+{
+    "continu": "Continue",
+    "stakin": "Flip 'n' Stack 'em",
+    "start_stack": "Start stacking",
+    "already_have_an_acco": "Already have an account?",
+    "login": " Login",
+    "whats_your_email": "What's your email\naddress",
+    "enter_email": "Enter your email",
+    "choo_your_pass": "Choose your\npassword",
+    "at_least": "At least 8 charaters",
+    "would_you_like": "Would you like to\nlog in with Face ID?",
+    "user_faceId": "Use Face ID",
+    "nope_tks": "No thanks",
+    "welcome_back": "Welcome back",
+    "email_address": "Email address",
+    "password": "Password",
+    "forgot_pass": "Forgot password?"
+}
